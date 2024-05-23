@@ -39,8 +39,7 @@ header {
 
 .foto,
 .foto1 {
-
-  float: right;
+  display: inline-flex;
   width: 25%;
   margin-left: 20px;
   padding-top: 100px;
@@ -71,7 +70,9 @@ header {
 
 .ordem {
   margin-left: 20px;
-
+}
+.ordem pre{
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -343,4 +344,47 @@ border: none;
   border-radius: 20%;
 
 
+}
+
+.macOS {
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+ 
+}
+.macOSwrapper .tooltip {
+  display: inline-flex;
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+.macOSwrapper:hover .tooltip{
+  visibility: visible;
+}
+.macOSwrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(50% - 20px);
+  height: 300px;
+  margin: 10px;
+}
+.imagem {
+  display: inline-flex;
+  object-fit: contain;
+  width: 100px;
+  height: 100px;
+  transition:transform 0.25s ease;
+}
+
+.imagem:hover {
+  -webkit-transform:scale(1.5);
+  transform:scale(1.5);
 }
